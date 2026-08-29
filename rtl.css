@@ -1,0 +1,47 @@
+/**
+ * Minimal RTL language overrides. WordPress auto-loads this file instead of
+ * style.css when a right-to-left language (Arabic, Hebrew, etc.) is active.
+ * Most of the theme already uses logical/flex layouts that adapt on their
+ * own; the handful of directional exceptions are corrected here.
+ */
+.primary-menu .menu-item-has-children > a::after {
+	transform: rotate(135deg);
+}
+.primary-menu .sub-menu {
+	left: auto;
+	right: 0;
+}
+.primary-menu .sub-menu .sub-menu {
+	left: auto;
+	right: 100%;
+	margin: 0 8px 0 0;
+}
+.cxc-mobile-menu {
+	right: auto;
+	left: 0;
+	transform: translateX(-100%);
+	box-shadow: 20px 0 60px rgba(0, 0, 0, .2);
+}
+.cxc-mobile-menu.is-active {
+	transform: translateX(0);
+}
+.back-to-top {
+	right: auto;
+	left: 28px;
+}
+.skip-link {
+	left: auto;
+	right: -9999px;
+	border-radius: 0 0 0 8px;
+}
+.skip-link:focus {
+	right: 0;
+}
+.alignleft {
+	float: right;
+	margin: .4em 0 1em 1.6em;
+}
+.alignright {
+	float: left;
+	margin: .4em 1.6em 1em 0;
+}

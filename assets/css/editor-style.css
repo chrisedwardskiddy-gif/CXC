@@ -1,0 +1,50 @@
+/**
+ * Block editor styling so the writing/editing experience matches the
+ * front end as closely as possible.
+ */
+:root{
+	--cxc-primary:#5b3df0;
+	--cxc-secondary:#00c2a8;
+	--cxc-accent:#ff5d73;
+	--cxc-gradient:linear-gradient(120deg,var(--cxc-primary) 0%,var(--cxc-secondary) 100%);
+	--cxc-heading:#0d0f1a;
+	--cxc-text:#171923;
+	--cxc-text-muted:#5a5f70;
+	--cxc-bg-alt:#f6f7fb;
+	--cxc-border:#e6e8f0;
+	--cxc-radius:16px;
+	--cxc-radius-sm:8px;
+	--cxc-card-shadow:0 4px 24px rgba(20,20,43,.06);
+}
+
+body{
+	font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+	color:var(--cxc-text);
+	font-size:16px;
+	line-height:1.7;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+	color:var(--cxc-heading);
+	font-weight:700;
+	letter-spacing:-.01em;
+}
+
+.eyebrow{color:var(--cxc-primary);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.8rem}
+.lead{font-size:1.15rem;color:var(--cxc-text-muted)}
+.text-gradient{background:var(--cxc-gradient);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.text-muted{color:var(--cxc-text-muted)}
+
+.wp-block-button__link{
+	border-radius:100px;background:var(--cxc-gradient);font-weight:700;padding:14px 28px;
+}
+.wp-block-button.is-style-outline .wp-block-button__link{background:none;border:2px solid var(--cxc-border);color:var(--cxc-heading)}
+
+.cxc-card,.service-card,.pricing-card{
+	background:#fff;border-radius:var(--cxc-radius);box-shadow:var(--cxc-card-shadow);padding:32px;
+}
+.cxc-cta{background:var(--cxc-gradient);border-radius:28px;padding:56px;color:#fff;text-align:center}
+.cxc-cta h2,.cxc-cta p{color:#fff}
+.cxc-section-alt{background:var(--cxc-bg-alt)}
+.wp-block-details.cxc-faq-item{background:var(--cxc-bg-alt);border-radius:var(--cxc-radius-sm);padding:18px 22px}

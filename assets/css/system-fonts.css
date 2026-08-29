@@ -1,0 +1,6 @@
+/**
+ * Fallback stylesheet loaded instead of Google Fonts when the "Load Google
+ * Fonts" Customizer option is switched off (privacy / max speed mode).
+ * Intentionally empty: the theme's font stacks already fall back to system
+ * fonts, so nothing needs to load here.
+ */
